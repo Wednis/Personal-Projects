@@ -1,2 +1,2 @@
-# Personal-projects
-Personal projects
+# Personal-Projects
+Personal-Projects
