@@ -1,14 +1,13 @@
-#改进：增加二次编码选项
 def replace_characters(input_str, replace_dict, replace_str):
-    for i in input_str:
-        if i in replace_dict:
+    for i in input_str:             #遍历字符(Traverse Characters)
+        if i in replace_dict:               #判断key是否存在于replace_dict(Determine if the key exists in replace_dict)
             replace_str+=replace_dict[i]
         else :
             replace_str+=i
     return replace_str
-input_str=input("input:")
-replace_str=""
-replace_dict = {
+
+input_str=input("Input:")
+replace_dict = {                         #urlencode-dictionary
     " ": "%20",
     "!": "%21",
     "\"": "%22",
@@ -99,5 +98,12 @@ replace_dict = {
     "}": "%7D",
     "~": "%7E",
 }
+replace_str=""          #空字符串储存被替换后的字符(Empty string stores replaced characters)
 result = replace_characters(input_str, replace_dict, replace_str)
 print(result)
+next=input("Do you need a secondary urlencodeing? Y or N:")             #判断是否需要二次选项(Determine if a secondary option is needed)
+if next == "Y" or next == "y":
+    sencondary_str=result.replace("%","%25")
+    print(sencondary_str)
+if next == "N" or next == "n":
+    exit()
