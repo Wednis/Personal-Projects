@@ -14,7 +14,7 @@ def  classes_searching(classes_dict, input_str):
             count_no += 1
             continue
     if count_no == len(classes_dict):      #当所有i都匹配不到时执行，即没有匹配的类
-        print("No classes found.")
+        print("Not found.")
         exit()
     return classes_match_dict
 
@@ -30,8 +30,8 @@ sub_str="class "
 input_str=input("Input your string:")
 methods=input(
 """Choose the following options:
-1.search for the specific class (input it yourself,like:type)
-2.search for the class that could be used for RCE
+1.Search for the specific class. (input it yourself,example:type)
+2.Search for the class that could be used for RCE.
 Input your choice:""")             #此处可扩展
 if methods == "1":
     str2 = input("Input the class you want to search for:")
@@ -40,7 +40,7 @@ if methods == "1":
 if methods == "2":
     classes_searching(classes_dict2, input_str)
 #if methoods == "3":      此处可扩展
-print("Classes found.")
+print("Found.")
 print(classes_match_dict)
 
 
