@@ -1,3 +1,4 @@
+#达到了10秒一百多个请求
 import time
 import requests
 
