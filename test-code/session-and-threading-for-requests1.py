@@ -21,7 +21,7 @@ def request():
         data_que.task_done()          #告诉队列管理器处理完成，以便进行下一步
 
 
-url = "http://37c4812a-47a2-4b4b-936a-5765156a8481.node5.buuoj.cn:81/"
+url = "http://xxxxxx"
 for i in range(100):
     data_que.put(url)                 #往队列中塞入100个url
 start = time.time()
