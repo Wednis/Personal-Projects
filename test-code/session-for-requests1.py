@@ -11,7 +11,7 @@ def request(url,session):
             print(f'requesting to {url}')
 
 session=requests.Session()
-url="http://61.147.171.105:49872/"
+url="http://xxxxxx"
 start = time.time()
 request(url=url,session=session)
 end = time.time()
