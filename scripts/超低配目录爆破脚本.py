@@ -8,7 +8,7 @@ def explosion(target_url, file_path):
                 url=target_url+line
                 res = requests.get(url=url)
                 if res.status_code == 200 :
-                    print(url)
+                    print(url, end='')
             exit()
 
 if __name__ == '__main__':
