@@ -23,10 +23,13 @@ classes_dict2={                       #2号待匹配字典
     "os._wrap_close":"1",
     "warnings.WarningMessage":"2",
     "warnings.catch_warnings":"3",
+    "site._Printer":"4",
+    "file":"5",
+    "subprocess.Popen":"6",    
 }
 #classes_dict3,classes_dict4....      此处可扩展
 classes_match_dict={}              #储存匹配项的字典
-sub_str="class "
+sub_str="<"
 input_str=input("Input your string:")
 methods=input(
 """Choose the following options:
