@@ -1,3 +1,4 @@
+#如果类名太长就寄，直接报废，所以用re写了第二个
 def  classes_searching(classes_dict, input_str):
     count_no = 0
     for i in classes_dict:              #遍历传入字典的元素
