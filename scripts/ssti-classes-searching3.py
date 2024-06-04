@@ -22,7 +22,7 @@ def class_searching(classes_dict, input_str):
 
 def request(url):
     res = requests.get(url=url)
-    match = re.findall(r'(&lt;.*&gt;)', res.text)
+    match = re.findall(r'(&lt;[cet][lny].*&gt;)', res.text)
     return match[0]
 
 class_match_dict = {}
