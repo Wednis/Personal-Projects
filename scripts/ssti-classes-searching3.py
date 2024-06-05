@@ -3,7 +3,7 @@ import re
 import requests
 
 def class_searching(classes_dict, input_str):
-    match = re.findall(r'(&lt;.*?&gt;)', input_str)
+    match = re.findall(r'(&lt;.*?[^&][^l][^t][^;].*?&gt;)', input_str)
     count = 0
     for i in classes_dict:
         for j in match:
