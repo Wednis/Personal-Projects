@@ -24,6 +24,13 @@ class fuzz:
                         self.result[id] = [line, res.status_code, len(res.text)]
         print(self.result)
 
+    #接口
+    def start(self):
+        dict_number = input('Input the dict_number:')
+        url = input('Input the url:')
+        req_method = input('Input the req_methods:')
+        self.fuzz(dict_number=dict_number, url=url, req_method=req_method)
+
 if __name__ == '__main__':
     Fuzz =fuzz()
     dict_number = input('Input the dict_number:')
